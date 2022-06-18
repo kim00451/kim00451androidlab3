@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
                 };
             });
+
+
     }
                 protected void onPause() {
                     super.onPause();
@@ -64,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
 
                     ed.commit();
                 }
+
+
 
 
 }

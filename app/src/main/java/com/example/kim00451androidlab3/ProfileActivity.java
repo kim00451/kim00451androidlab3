@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
@@ -40,6 +41,18 @@ public class ProfileActivity extends AppCompatActivity {
 
                 }
             });
+
+        final Button button2 = (Button) findViewById(R.id.chatbutton);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ProfileActivity.this, ChatRoomActivity.class);
+                startActivity(intent);
+
+            };
+        });
+
 
     }
 
@@ -97,6 +110,7 @@ public class ProfileActivity extends AppCompatActivity {
             myPictureTakerLauncher.launch(takePictureIntent);
         }
     }
+
 
 
 
